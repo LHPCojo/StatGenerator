@@ -10,6 +10,8 @@ app.get("/hello", (req, res) => {
     res.json({ message: "Hello there."});
 });
 
+require("./app/routes/generate.route")(app);
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
