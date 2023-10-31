@@ -22,4 +22,11 @@ deployments:
         value: first_topic
 
 # This section describes the Topics of the data pipeline
-topics: []
+topics:
+  - name: first_topic
+    persisted: false
+    configuration:
+      partitions: 2
+      replicationFactor: 2
+      retentionInMinutes: 10080
+      retentionInBytes: 52428800
