@@ -8,11 +8,4 @@ metadata:
 deployments: []
 
 # This section describes the Topics of the data pipeline
-topics:
-  - name: first_topic
-    persisted: false
-    configuration:
-      partitions: 2
-      replicationFactor: 2
-      retentionInMinutes: 10080
-      retentionInBytes: 52428800
+topics: []
